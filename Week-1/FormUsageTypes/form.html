@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Membership form</h2>
+
+    <form action="thankyou.html" method="get">
+        <!-- Text -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Name"><br>
+        <label for="surname">Surname:</label><br>
+        <input type="text" id="surname" name="surname" placeholder="Surname"><br>
+        <!-- email requires @ to be submitted -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Email address" required><br>
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+        <!-- Date -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br> <br>   
+        <!-- Radio -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">I don't want to specify</label><br> <br>
+    
+        <!-- Checkbox -->
+        <label>Favourite color:</label><br>
+        <input type="checkbox" id="blue" name="favorite_color" value="blue">
+        <label for="blue">Blue</label>
+        <input type="checkbox" id="red" name="favorite_color" value="red">
+        <label for="red">Red</label>
+        <input type="checkbox" id="black" name="favorite_color" value="black">
+        <label for="black">Black</label><br><br>
+    
+        <!-- Dropdown Select -->
+        <label for="drink">Favourite fruit:</label><br>
+        <select id="drink" name="favorite_drink">
+            <option value="Apple">Apple</option>
+            <option value="Banana">Banana</option>
+            <option value="Strawberry">Strawberry</option>
+        </select><br><br>
+        <!-- Text area -->
+        <label for="feedback">Your feedback:</label><br>
+        <textarea id="feedback" name="feedback" cols="30" rows="10"></textarea><br><br>
+        <!-- File upload -->
+        <label for="file">Upload file:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+    
+        <!-- Pre checked radio buttons -->
+        <label>Subscribe me to the mailing list:</label><br>
+        <input type="radio" id="subscribe_yes" name="subscribe" value="yes" checked>
+        <label for="subscribe_yes">Yes</label>
+        <input type="radio" id="subscribe_no" name="subscribe" value="no">
+        <label for="subscribe_no">No</label><br><br>
+    
+        <!-- Submit -->
+        <input type="submit" value="Become a member!">
+    
+        <!-- Reset -->
+        <input type="reset" value ="Reset">
+    </form>
+
+
+</body>
+</html>
