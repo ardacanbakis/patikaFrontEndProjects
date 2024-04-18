@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(71, 87, 120);
+    color:white;
+    font-family:Helvetica
+}
+
+
+h1 {
+    text-align: center;
+    color: #febf5e;
+    font-size: 44px;
+    font-family:Helvetica;
+}
+
+h2 {
+    color:aqua;
+    font-size: 36px;
+
+}
+
+h4 { color:rgb(43, 153, 226);
+
+}
+p {
+    line-height: 1.6;
+   /* Satır yüksekliğini 1.6 em olarak ayarlama */
+}
+
+nav {
+    font-size: 20px;
+    color: white;
+    text-align: center;;
+}
+
+.left {
+
+    align-self: auto;
+}
+
+.white-text {
+    color: white;
+}
+
+.aboutUs {
+    text-align: center;
+}
+
+.contactUs {
+    text-align: center;
+    font-size: 30px;
+}
