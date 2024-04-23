@@ -10,8 +10,8 @@ function updateTime() {
   let hours = now.getHours();
   let minutes = now.getMinutes();
   let seconds = now.getSeconds();
-  let day = now.toLocaleDateString("tr-TR", { weekday: "long" });
-  let date = now.toLocaleDateString("tr-TR", {
+  let day = now.toLocaleDateString("en-EN", { weekday: "long" });
+  let date = now.toLocaleDateString("en-EN", {
     day: "numeric",
     month: "long",
     year: "numeric",
