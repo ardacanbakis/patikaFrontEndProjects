@@ -6,33 +6,36 @@
     <link rel="shortcut icon" href="/assets/gym.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Theo's GYM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Theo's Gym</title>
 </head>
 <body>
-<!-- NAV BAR  -->
     <header>
         <nav id="navbar">
-            <img src="assets/logo.png" alt="Powerfull" id="nav-logo">
-            <ul>
+            <img id="nav-logo" src="assets/logo.png" alt="Powerfull Logo">
+            <ul id="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#classes">Classes</a></li>
                 <li><a href="#trainers">Trainer Reviews</a></li>
+                <li><a href="#client-reviews">Client Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><button id="join-us">JOIN US</button></li>
+                <button id="join-us">Join Us</button>
             </ul>
+            <div id="hamburger" class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
-        
     </header>
 
-<!-- HERO SECTION -->
+    <!-- HERO SECTION -->
     <section id="hero">
         <div class="background-image">
             <div class="overlay">
-                <div id="Theo-tag">Theo's Gym</div>
-                <h1>Welcome!</h1>
-                <p>Start your fitness journey with us today!</p>
+                <div class="label">Theo's Gym</div>
+                <h1>Group <br>Practice <br>With Trainer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit similique explicabo veniam, id suscipit minus architecto quae, deserunt voluptas doloribus dicta accusantium iste qui atque!</p>
                 <div class="hero-buttons">
                     <button id="sign-up">Sign Up</button>
                     <button id="details">Details</button>
@@ -40,216 +43,231 @@
             </div>
         </div>
     </section>
-    
-<!-- STATS BOX SECTION  -->
-<section id="stats">
-    <div class="stats-container">
-        <div class="stats-box">
-            <h3>325</h3>
-            <p>Courses</p>
-        </div>
-        <div class="stats-box">
-            <h3>405</h3>
-            <p>Work Outs</p>
-        </div>
-        <div class="stats-box">
-            <h3>305</h3>
-            <p>Working Hours</p>
-        </div>
-        <div class="stats-box">
-            <h3>705</h3>
-            <p>Happy Clients</p>
-        </div>
-    </div>
-</section>
 
-<!--OUR CLASSES SECTION -->
-
-    <section id="classes">
-    <h2>Our Classes</h2>
-    <p>Welcome to Theo's Gym, where fitness meets community! Explore our diverse range of classes designed for all levels and preferences. From invigorating yoga to dynamic group sessions, personalized training, and rejuvenating stretching, each class is led by experienced instructors to inspire your fitness journey. Join us and discover the transformative power of movement and camaraderie at Theo's Gym</p>
-    <div class="class-buttons">
-        <button onclick="showImage('Yoga')">Yoga</button>
-        <button onclick="showImage('Group')">Group</button>
-        <button onclick="showImage('Solo')">Solo</button>
-        <button onclick="showImage('Stretching')">Stretching</button>
-    </div>
-    <div class="class-section">
-        <div class="class-description"></div>
-        <div class="image-container"></div> 
-    </div>
+    <!-- STATS SECTION -->
+    <section id="stats">
+        <div class="stats-container">
+            <div class="stats-box">
+                <h3>325</h3>
+                <p>Courses</p>
+            </div>
+            <div class="stats-box">
+                <h3>405</h3>
+                <p>Work Outs</p>
+            </div>
+            <div class="stats-box">
+                <h3>305</h3>
+                <p>Working Hours</p>
+            </div>
+            <div class="stats-box">
+                <h3>705</h3>
+                <p>Happy Clients</p>
+            </div>
+        </div>
     </section>
 
-<!-- BMI CALCULATOR SECTION -->
-<section id="BMI">
-    <div class="bmi-calculator-section">
-    <div class="bmi-description">
-        <h2>BMI Calculator</h2>
-        <p>Calculate your Body Mass Index (BMI) by entering your height in centimeters (cm) and your weight in kilograms (kg) in the provided fields to see your BMI and check if you're underweight, normal weight, overweight, or obese.</p>
-        <div class="inputs">
-            <input type="number" id="height" placeholder="Your Height"> cm 
-            <input type="number" id="weight" placeholder="Your Weight"> kg
+    <!--OUR CLASSES SECTION -->
+    <section id="classes">
+        <h2>Our Classes</h2>
+        <p>Explore our diverse range of classes designed for all levels and preferences.</p>
+        <div class="class-buttons">
+            <button onclick="showImage('Yoga')">Yoga</button>
+            <button onclick="showImage('Group')">Group</button>
+            <button onclick="showImage('Solo')">Solo</button>
+            <button onclick="showImage('Stretching')">Stretching</button>
         </div>
-    </div>
-    <div class="bmi-image-container">
-        <div class="bmi-label">Your BMI</div>
-        <img src="assets/bmi-index.jpg" alt="BMI Index" id="bmi-index-image">
-        <div id="arrow-container">
-            <div id="orange-arrow"></div>
+        <div class="class-section">
+            <div class="class-description"></div>
+            <div class="image-container"></div>
         </div>
-    </div>
-    </div>
-</section>
+    </section>
 
-<!-- OUR BEST TRAINERS SECTION -->
-    <section id="trainers">
-    <h2>OUR BEST TRAINERS</h2>
-    <p>Meet our certified trainers at Theo's Gym—experts in fitness, nutrition, and personal training. With tailored workouts and unwavering support, they'll inspire and guide you to reach your goals. Get ready to transform your health journey with our dedicated team.</p> 
-    <div class="trainer-images">
-        <div class="trainer">
-            <div class="trainer-frame" >
-                <img src="assets/trainer1.jpg" alt="Nina Chaser">
+    <!-- BMI CALCULATOR SECTION -->
+    <section id="BMI">
+        <div class="bmi-container">
+            <div class="bmi-description">
+                <h6>BMI Calculator</h6>
+                <p>Body Mass Index (BMI) is a measure of body fat that helps assess an individual's overall health based on their height and weight. It's calculated using the formula: BMI = Weight (kg) / [Height (m)]². According to BMI classifications, a value between 18.5 and 24.9 indicates a normal weight.</p>
+                <p>You can calculate your Body Mass Index (BMI) by entering your height in centimeters (cm) and your weight in kilograms (kg).</p>
+                <div class="inputs">
+                    <input type="number" id="height" placeholder="Your Height"> cm
+                    <input type="number" id="weight" placeholder="Your Weight"> kg
+                </div>
             </div>
-            <div class="trainer-overlay">
+            <div class="bmi-results">
+                <div class="bmi-label">Your BMI : <span id="bmi-result"></span></div>
+                <img src="assets/bmi-index.jpg" alt="BMI Index" id="bmi-index-image">
+                <div id="arrow-container">
+                    <div id="orange-arrow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- OUR BEST TRAINERS SECTION -->
+    <section id="trainers">
+        <h2>Our Best Trainers</h2>
+        <p>Lorem ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney College.</p>
+        <div class="trainer-images">
+            <div class="trainer">
+                <div class="blue-1"></div>
+                <div class="blue-2"></div>
+                <div class="trainer-frame">
+                    <img src="assets/trainer1.jpg" alt="Nina Chaser">
+                </div>
                 <div class="trainer-info">
                     <h4>Nina Chaser</h4>
                     <p>Yoga Instructor</p>
                 </div>
             </div>
-        </div>
-        <div class="trainer">
-            <div class="trainer-frame" >
-                <img src="assets/trainer2.jpg" alt="John Doe">
-            </div>
-            <div class="trainer-overlay">
+            <div class="trainer">
+                <div class="blue-1"></div>
+                <div class="blue-2"></div>
+                <div class="trainer-frame">
+                    <img src="assets/trainer2.jpg" alt="John Doe">
+                </div>
                 <div class="trainer-info">
                     <h4>John Doe</h4>
-                    <p>Body Building Coach</p>
+                    <p>Weights Coach</p>
                 </div>
             </div>
-        </div>
-        <div class="trainer">
-            <div class="trainer-frame">
-                <img src="assets/trainer3.jpg" alt="Jane Doe">
-        </div>
-            <div class="trainer-overlay">
+            <div class="trainer">
+                <div class="blue-1"></div>
+                <div class="blue-2"></div>
+                <div class="trainer-frame">
+                    <img src="assets/trainer3.jpg" alt="Jane Doe">
+                </div>
                 <div class="trainer-info">
                     <h4>Jane Doe</h4>
-                    <p>Personal Trainer</p>
+                    <p>Cardio Trainer</p>
                 </div>
             </div>
         </div>
-    </div>
     </section>
-
-<!-- PURCHASE FROM US SECTION -->
+    
+    <!-- PURCHASE SECTION -->
     <section id="purchase">
-        <h2>PURCHASE FROM US</h2>
+        <h2>Purchase From Us</h2>
         <p> Explore our selection of premium sports equipment available for purchase at Theo's Gym. From weights to mats and more, gear up with top-quality essentials to elevate your home workouts.  </p> 
-        <div >
+        <div class="purchase-items">
             <div class="item">
-                <img src="assets/purchase1.jpg" alt="purchase 1">
+                <img src="assets/purchase1.jpg" alt="Kettlebell 5kg">
                 <h4>Kettlebell / 5kg</h4>
-                <h5>$89.95 / $59.95</h5>
-                <button class="add-to-cart">Add To Cart</button>
+                <h5><s>89.99$</s>/ 59.99$</h5> <br> 
+                <button class="add-to-cart">Add to Cart</button>
             </div>
             <div class="item">
-                <img src="assets/purchase2.jpg" alt="purchase 2">
+                <img src="assets/purchase2.jpg" alt="Treadmill">
                 <h4>Treadmill</h4>
-                <h5>$89.95/ $59.95</h5>
-                <button class="add-to-cart">Add To Cart</button>
+                <h5><s>899.99$</s> / 599.99$</h5> <br>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
             <div class="item">
-                <img src="assets/purchase3.jpg" alt="purchase 3">
+                <img src="assets/purchase3.jpg" alt="Adjustable Dumbbell">
                 <h4>Adjustable Dumbbell</h4>
-                <h5>$89.95 / $59.95</h5>
-                <button class="add-to-cart">Add To Cart</button>
+                <h5><s>89.99$</s>/ 59.99$</h5> <br>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
             <div class="item">
-                <img src="assets/purchase4.jpg" alt="purchase 4">
+                <img src="assets/purchase4.jpg" alt="Kettlebell 3kg">
                 <h4>Kettlebell / 3kg</h4>
-                <h5>$89.95 / $59.95</h5>
-                <button class="add-to-cart">Add To Cart</button>
+                <h5><s>89.99$</s>/ 59.99$</h5> <br>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
         </div>
     </section>
 
-<!-- REVIEW CLIENT SECTIONJ -->
+<!-- CLIENT REVIEW SECTION -->
 <section id="client-reviews">
-    <h2>CLIENT REVIEWS</h2>
-    <p>Discover why our clients rave about their experiences at Theo's Gym—real stories, real results, and real satisfaction.</p> 
+    <h2>Client Reviews</h2>
+    <p>Discover why our clients rave about their experiences at Theo's Gym—real stories, real results, and real satisfaction.</p>
     <div class="reviews-container">
         <div class="review">
-            <div class="client-image">
-                <img src="assets/client1.jpg" alt="Client Review 1">
-                <h5>Diet Expert </br> CEO</h5>
+            <div class="client-info">
+                <div class="client-image">
+                    <img src="assets/client1.jpg" alt="Diet Expert">
+                </div>
+                <div class="client-details">
+                    <h4>Diet Expert</h4>
+                    <h5>CFO</h5>
+                </div>
             </div>
             <div class="client-review">
-                    <p>"I joined Theo's Gym seeking a change, and I found so much more—a supportive community, dedicated trainers, and a place where my goals became realities. Thanks to their guidance, I've never felt stronger or more confident in my fitness journey!"</p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus ducimus.
             </div>
         </div>
         <div class="review">
-            <div class="client-image">
-            <img src="assets/client2.jpg" alt="Client Review 2">
-            <h5>Cardio Trainer<br>CFO</h5>
-        </div>
+            <div class="client-info">
+                <div class="client-image">
+                    <img src="assets/client2.jpg" alt="Cardio Trainer">
+                </div>
+                <div class="client-details">
+                    <h4>Cardio Trainer</h4>
+                    <h5>CEO</h5>
+                </div>
+            </div>
             <div class="client-review">
-            <p>""At Theo's Gym, every workout is a win—diverse classes, motivating atmosphere, and caring trainers."</p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus ducimus.
+            </div>
         </div>
     </div>
 </section>
-<!-- CONTACTS SECTION -->  
-    <section id="contact">
-        <h2>CONTACT US</h2>
-        <p>Get in touch with Theo's Gym today and take the first step towards a healthier lifestyle.</p>
-        <div class="contact-container">
-            <div class="contact-details">
-                <div class="contact-info">
-                    <p> Mobile Number: <br>+905469660256 </p>
-                    <p>Email Address:  <br> demo@demo.com</p>
-                </div>
-                <h3>Make An Appointment</h3>
-                <form class="appointment-form">
-                    <input type="text" placeholder="Your Name"><br>
-                    <input type="email" placeholder="Your Email"><br>
-                    <textarea placeholder="Your Message"></textarea>
-                    <!-- <button type="submit">Submit</button> -->
-                </form> 
-            </div>
-            <div id="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.9859919039277!2d27.244582299999998!3d37.8372138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bea8c02445c189%3A0xcc88fb8ac5b732c4!2sOttoman%20Turk%20Hamam%C4%B1!5e0!3m2!1sen!2str!4v1714316002145!5m2!1sen!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        </section>
-    </body>
-<!-- FOOTER SECTION -->
-<footer>
-        <div id="footer-logo">
-            <img src="assets/logo.png" alt="Powerfull Logo">
-        </div>
-        <p>"Elevate your fitness journey with Theo's Gym—where dedication meets results. Join us today and redefine what's possible."</p>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Information</h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Classes</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Helpful Links</h3>
-                <ul>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Supports</a></li>
-                    <li><a href="#">Terms & Condition</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </div>
-</footer>
-    <script src="main.js"></script>
 
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Get in touch with Theo's Gym today and take the first step towards a healthier lifestyle.</p>
+    <div class="contact-container">
+        <div class="contact-details">
+            <div class="contact-info">
+                <p>Mobile Number:<br>+90 546 966 02 56</p>
+                <p>Email Address:<br>info@theosgym.com</p>
+            </div>
+            <h3>Make An Appointment</h3>
+            <form class="appointment-form">
+                <input type="text" placeholder="Your Name"><br>
+                <input type="email" placeholder="Your Email"><br>
+                <textarea placeholder="Your Message"></textarea>
+                <!-- <button type="submit">Submit</button> -->
+            </form>
+        </div>
+        <div id="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.9859919039277!2d27.244582299999998!3d37.8372138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bea8c02445c189%3A0xcc88fb8ac5b732c4!2sOttoman%20Turk%20Hamam%C4%B1!5e0!3m2!1sen!2str!4v1714316002145!5m2!1sen!2str" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+    <!-- FOOTER -->
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <img src="assets/logo.png" alt="Powerfull Logo" id="footer-logo">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi doloremque facere consequuntur possimus minus ducimus?</p>
+        <div class="footer-section">
+            <h3>Information</h3>
+            <ul>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Helpful Links</h3>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#support">Supports</a></li>
+                <li><a href="#terms">Terms & Condition</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Theo's Gym | All Rights Reserved</p>
+    </div>
+</footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

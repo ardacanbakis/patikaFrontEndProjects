@@ -1,11 +1,11 @@
 # Theo's Gym Website Project
 
-Welcome to the Theo's Gym website project! This project is for 7 speak of front and development caused by Patika+.
+Welcome to the Theo's Gym website project! This project is for week-7  of front and bootcamp by Patika+.
 
 ## Project Overview
 
 The goal of this project was to build a responsive and engaging website that not only provides information about the gym's offerings but also 
-encourages user interaction through features like a BMI calculator and dynamic class schedules. .
+encourages user interaction through features like a BMI calculator and dynamic class schedules.
 
 ## Features
 
