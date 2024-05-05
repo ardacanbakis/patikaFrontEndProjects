@@ -131,7 +131,7 @@ window.addEventListener('scroll',(e)=>{
     let scroll = window.scrollY
     if (scroll > 250) {
         navbar.style.backgroundColor = '#355592'  
-    } else if (scroll < 200) {
+    } else if (scroll < 250) {
         navbar.style.backgroundColor = 'transparent'
     }
 });

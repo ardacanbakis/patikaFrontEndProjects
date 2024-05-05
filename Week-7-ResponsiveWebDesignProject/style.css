@@ -167,7 +167,7 @@ h2::after {
 .overlay h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    max-width: 30%;  
+    max-width: 25%;  
 }
 .overlay p {
     max-width: 100%;
@@ -363,7 +363,7 @@ h2::after {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-top: 5%;
+    position: relative;
 }
 
 .inputs input {
@@ -538,7 +538,7 @@ h2::after {
 #purchase {
     background-color: #ffffff;
     text-align: center;
-    padding: 5%;
+    padding: 2%;
 }
 
 #purchase p {
@@ -550,24 +550,32 @@ h2::after {
 }
 .purchase-items {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    max-width: 100%;
-    justify-content: space-around;
-    /* align-items: flex-start; */
-    /* align-items: center; */
 }
 
 .item {
     position: relative;
     display: inline-block;
     margin: 10px;
+    width: 200px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
 }
 
-.item img {
-    max-width: 25vh;
-    height: auto;
-    margin-top: 1%;
+.item:hover {
+    transform: translateY(-5px);
 }
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .item h4 {
     font-size: 1.25rem;
@@ -683,25 +691,23 @@ h2::after {
 #contact {
     background-color: #ffffff;
     text-align: center;
-    padding: 10px 0; 
+    padding: 5%;
 }
 
 .contact-container {
     margin-top: 4%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap : 80px;
 }
 
 .contact-details {
     position: relative;
     display: inline-block;
     text-align: left;
-    max-width: 35%;
-    margin: auto; /* Center contact details */
+    margin: auto; 
 }
 
 .contact-info {
@@ -712,8 +718,17 @@ h2::after {
     margin-bottom: 10%;
 }
 
-.appointment-form input,
-.appointment-form textarea {
+.contact-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    
+}
+.contact-info p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.appointment-form input
+{
     width: 100%;
     height: 110%;
     margin-bottom: 15px;
@@ -722,6 +737,12 @@ h2::after {
     border-radius: 3px;
 }
 
+.appointment-form textarea {
+    width: 100%;
+    height: 100px; 
+    border: none;
+    background-color: #f1f8ff;
+}
 #google-map iframe {
     width: 400px;
     height: 300px;
@@ -785,248 +806,284 @@ footer {
     border-top: 1px solid #ffffff55;
     padding-top: 15px;
 }
-/* Responsive Adjustments for Screens <= 576px */
+/* RESPONSIVE DESIGN FOR 576PX */
+/* Navbar */
 @media (max-width: 576px) {
-
-    #navbar ul {
-        display: flex;
-        flex-direction: column;
+    #navbar {
+        flex-direction: row;
+        padding: 10px;
+        background-color: #355592;
     }
-
     #nav-logo {
-        height: 5%;
-        width: auto;
-        margin: 1px 0;
+        cursor: pointer;
         margin-left: 5%;
+    }
+    #nav-links {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        margin-top: 10px;
+    }
+    #nav-links.active {
+        display: flex;
     }
 
     #join-us {
         display: none;
     }
-
-    #nav-links {
-        display: none;
-    }
-
-    #nav-links.active {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
     #nav-links li {
-        text-align: center;
-        align-self: center;
-        padding: 5% 0;
+        margin: 5px 0;
     }
-
-    #nav-links li a {
-        font-size: 10px;
-    }
-
     .hamburger {
         display: flex;
+        align-self: flex-end;
         margin-right: 15%;
     }
+}
 
-    #navbar {
-        background-color: #355592;
-        padding: 10px;
-    }
-
-    /* Stats Section */
-    #stats {
-        margin-left: 10%;
-        margin-right: 10%;
-        padding: 2% 2%;
-        position: relative;
-        background: #f1f8ff;
+/* Hero Section */
+@media (max-width: 576px) {
+   
+    
+    .overlay {
+        max-width: 90%;
+        padding-top: 20%;
         text-align: center;
     }
-
-    .stats-container {
-        flex-direction: column;
+    .overlay h1 {
+        font-size: 2rem;
+        left: 10%;
+        text-align: left;
+        max-width: 60%;
+        font-size: 38px;
+        font-weight: bolder;
     }
-
-    .stats-box {
-        margin: 10px 0;
-        width: 100%;
-    }
-
-    /* Our Classes Section */
-    #classes {
-        padding: 20px 0;
-    }
-
-    .class-buttons {
-        flex-direction: column;
-        gap: 10px;
-        margin: 0 auto 10px;
-    }
-
-    .class-section {
-        margin-left: 5%;
-        margin-right: 5%;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .overlay p {
+        font-size: 1.5rem;
         max-width: 100%;
     }
+    .overlay .label {
+        display: inline-block;
+        background-color: #355592;
+        color: white;
+        font-weight: 700;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translateX(-50%);
+    }
+    .hero-buttons {
+        margin-top: 5%;
+        flex-direction: column;
 
+        gap: 10px;
+    }
+    #sign-up, #details {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }  
+
+}
+/* Stats Section */
+@media (max-width: 576px) {
+    
+    #stats {
+        margin: 0 5%;
+        padding: 2% 0;
+    }
+    .stats-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .stats-box {
+        width: 75%;
+    }
+}
+
+/* Our Classes Section */
+@media (max-width: 576px) {
+    .class-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+    .class-section {
+        flex-direction: column;
+        margin: 0 5%;
+    }
     .class-description {
-        margin-top: 15px;
-        max-width: 90%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 20px;
     }
-
     .image-container img {
-        max-width: 90%;
+        max-width: 100%;
     }
+}
 
-    /* BMI Calculator Section */
+/* BMI Calculator Section */
+@media (max-width: 576px) {
     #BMI {
-        padding: 10px 0;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
     }
-
     .bmi-container {
         flex-direction: column;
         align-items: center;
         width: 90%;
-        margin: 0 auto;
     }
 
-    .bmi-description {
+    .bmi-description h6 {
         text-align: center;
-        padding: 0;
+        color: #355592;
+        font-size: 2rem;
+        margin-bottom: 10px;
     }
-
-    .bmi-results {
-        margin-top: 20px;
-        text-align: center;
+    .bmi-description, .bmi-results {
+        width: 100%;
     }
-
     .inputs {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
+        align-items: center;
+    
     }
-
-    .inputs input[type="number"] {
-        width: 80%;
+    .inputs input {
+        width: 50%;
+        align-items: left;
     }
-
-    #bmi-index-image {
-        max-width: 90%;
-    }
-
-    /* Best Trainers Section */
+}
+/* Best Trainers Section */
+@media (max-width: 576px) {
     #trainers {
         padding: 20px 0;
     }
-
     .trainer-images {
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
     }
-
     .trainer {
-        margin: 0 auto;
         width: 80%;
+        margin-bottom: 20px;
     }
 
-    .trainer-frame {
-        width: 100%;
+    .blue-1 {
+        top: -6px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 103%;
+        width: 30%;
+        transform: translateX(0%);
     }
-
-    /* Purchase Section */
-    #purchase {
-        padding: 20px 0;
+    .blue-2 {
+        top: 0;
+        left: -15px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 30%;
+        width: 107%;
+        transform: translateY(0%);
+    
     }
-
+}
+/* Purchase Section */
+@media (max-width: 576px) {
     .purchase-items {
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
     }
-
     .item {
-        max-width: 80%;
-        margin: 0 auto;
+        width: 90%;
     }
+}
+/* Review Section */
+@media (max-width: 576px) {
 
-    /* Client Reviews Section */
-    #client-reviews {
-        padding: 20px 0;
+    .client-info{
+        align-items: left;
+        gap:0px;
+
     }
-
     .reviews-container {
         flex-direction: column;
-        gap: 15px;
-    }
-
-    .review {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .client-info {
-        flex-direction: column;
         align-items: center;
-        text-align: center;
-    }
-
-    .client-image img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .client-review {
-        margin-top: 10px;
-    }
-
-    /* Contact Section */
-    #contact {
-        padding: 20px 0;
-    }
-
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 5%;
-        margin-right: 5%;
         gap: 20px;
     }
-
-    .contact-details,
-    #google-map {
-        max-width: 100%;
+    .review {
+        max-width: 80%;
+        text-align: center;
+        display: inline-block;
     }
-
-    .appointment-form input,
-    .appointment-form textarea {
-        width: 100%;
+    .client-image {
+        align-items: left;
+        margin: 0 auto;
         margin-bottom: 10px;
     }
+    .client-review {
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        background-color: #355592;
+        color: white;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    
+}
+/* Contact Section */
+@media (max-width: 576px) {
+#contact {
+    padding: 5%;
+}
 
-    /* Footer Adjustments */
+.contact-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 20px;
+}
+
+.contact-details {
+    text-align: center;
+    max-width: 80%;
+}
+
+.appointment-form input,
+.appointment-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #f1f8ff;
+}
+
+#google-map iframe {
+    width: 100%;
+    max-width: 400px;
+}
+}
+/* Footer */
+@media (max-width: 576px) {
     footer {
         padding: 20px 0;
     }
-
     .footer-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        flex-direction: row;
+    }
+    .footer-content p {
         text-align: center;
     }
-
     .footer-section {
-        margin-bottom: 20px;
-    }
-
-    .footer-logo {
-        align-self: center;
-        margin-bottom: 20px;
-    }
-
-    .footer-bottom {
-        margin-top: 20px;
+        text-align: center;
     }
 }
+
