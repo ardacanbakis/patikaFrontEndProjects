@@ -7,4 +7,4 @@ This is a simple HTML page for a Music Store, showcasing different musical instr
 - **HTML**: For structuring the content of the web pages.
 - **CSS**: For additional styling and customizations.
 
-![ScreenShot](Week-3-Bootstrap/musicStore/assets/musicStore.png)
+![ScreenShot](https://github.com/ardacanbakis/patikaFrontEndProjects/blob/main/Week-3-Bootstrap/musicStore/assets/musicStore.png?raw=true)
