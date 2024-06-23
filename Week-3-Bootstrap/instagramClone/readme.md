@@ -9,4 +9,4 @@ This project is a clone of the popular social media platform Instagram. It is bu
 - **CSS**: For additional styling and customizations.
 
 
-![ScreenShot](/assets/image.png)
+![ScreenShot]([/assets/image.png](https://github.com/ardacanbakis/patikaFrontEndProjects/blob/main/Week-3-Bootstrap/instagramClone/assets/image.png?raw=true))
