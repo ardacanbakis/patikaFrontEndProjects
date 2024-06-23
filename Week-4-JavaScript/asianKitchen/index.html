@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asian Kitchen</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zilla+Slab&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="mt-5 mb-3 d-flex justify-content-end">
+      <button id="theme-switcher" class="btn btn-outline-primary rounded-pill">Lights ON</button>
+    </div>
+    <section class="menu">
+      <!-- title -->
+      <div class="title">
+        <h2>Asian Kitchen's Menu</h2>
+      </div>
+      <!-- category menu -->
+      <div class="category-menu mb-4 text-center">
+        <button class="btn btn-outline-primary me-2" onclick="filterMenu('all')">All</button>
+        <button class="btn btn-outline-primary me-2" onclick="filterMenu('Korea')">Korean</button>
+        <button class="btn btn-outline-primary me-2" onclick="filterMenu('Japan')">Japanese</button>
+        <button class="btn btn-outline-primary" onclick="filterMenu('China')">Chinese</button>
+      </div>
+      <!-- menu items -->
+      <div class="section-center row" id="menu-items">
+        <!-- menu items will be dynamically added here -->
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>Created with <span class="red">love</span> by <a href="https://ardacanbakis.com" target="_blank">Arda Canbakış </a>© 2024</p>
+</footer>
+  <script src="app.js"></script>
+</body>
+</html>

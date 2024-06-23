@@ -1,0 +1,33 @@
+div .totalmoney{
+   background-color: white;
+}
+
+a img{
+    size: 100%;
+}
+.totalmoney {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.totalmoney span {
+    font-size: xx-large;
+    background: linear-gradient(to left, #27c695, #27c682, #27c695);
+    width: 100%;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.totalmoney img {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    margin: 10px;
+}
