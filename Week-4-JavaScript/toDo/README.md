@@ -8,7 +8,7 @@ Check out the live site [HERE](https://todo-app-ardacanbakis.vercel.app/).
 
 ## Preview
 ![Light Mode](https://i.imgur.com/gHNBNgY.png)
-![Dark Mode](https://imgur.com/gallery/todo-app-screenshot-dark-OzWwQJL)
+![Dark Mode](https://i.imgur.com/zF8fnx5.png)
 ## Features
 
 - Add new tasks to the list
