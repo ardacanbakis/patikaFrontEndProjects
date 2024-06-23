@@ -6,6 +6,9 @@ This is a simple and interactive To-Do List application built using HTML, CSS, J
 
 Check out the live site [HERE](https://todo-app-ardacanbakis.vercel.app/).
 
+## Preview
+![Light Mode](https://i.imgur.com/gHNBNgY.png)
+![Dark Mode](https://imgur.com/gallery/todo-app-screenshot-dark-OzWwQJL)
 ## Features
 
 - Add new tasks to the list
