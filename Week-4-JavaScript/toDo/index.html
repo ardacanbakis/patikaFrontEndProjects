@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header d-flex justify-content-end align-items-center my-4">
+            <button class="btn btn-dark ml-3" id="theme-toggle">Dark/Light</button>
+            <div class="logo"><a href="https://ardacanbakis.com" target="_blank">AC</a></div>
+        </div>
+        <h1 class="text-center my-4">To-Do List</h1>
+        <div class="input-group mb-3">
+            <input type="text" id="todo-input" class="form-control" placeholder="Add a new task">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="add-btn">Add</button>
+            </div>
+        </div>
+        <ul id="todo-list" class="list-group"></ul>
+    </div>
+
+    <!-- Bootstrap ve Toast CSS -->
+    <div class="toast" id="toast" data-delay="2000">
+        <div class="toast-header">
+            <strong class="mr-auto">Notification</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body">
+            <!-- Notification message will go here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>Created with <span class="red">love</span> by <a href="https://ardacanbakis.com" target="_blank">Arda Canbakış </a>© 2024</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
